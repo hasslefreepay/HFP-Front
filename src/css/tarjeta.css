@@ -1,0 +1,127 @@
+/* Estilo base para las tarjetas */
+.card {
+    margin: 0 auto;
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Estilo para tarjetas Visa */
+.card.visa {
+    background: linear-gradient(to bottom, #1a237e 0%, #3949ab 50%, #5c6bc0 100%);
+}
+
+/* Estilo para tarjetas Mastercard */
+.card.mastercard {
+    background: linear-gradient(to bottom, rgb(255, 0, 0) 0%, rgb(172, 7, 7) 50%, rgb(92, 2, 2) 100%);
+}
+
+/* Estilo para tarjetas American Express */
+.card.amex {
+    background: linear-gradient(to bottom, #004d40 0%, #00695c 50%, #00796b 100%);
+}
+
+/* Estilo para el brillo */
+.card:after {
+    content: '';
+    top: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 1;
+    opacity: .3;
+    animation: slide 3s infinite 3s;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%);
+}
+
+/* Animación del brillo */
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Estilo adicional de los íconos y texto */
+.fab, .far, .name, .price, .serial {
+    position: absolute;
+}
+.fa-credit-card {
+    top: 20px;
+    left: 20px;
+}
+.fa-cc-mastercard {
+    bottom: 20px;
+    right: 20px;
+}
+.name {
+    top: 20px;
+    right: 20px;
+}
+.price {
+    bottom: 20px;
+    left: 20px;
+}
+.serial {
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -20px;
+    font-size: 30px;
+}
+.balance {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-weight: 300;
+}
+
+/* Responsividad */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 300px;
+        height: 180px;
+        margin-top: -90px;
+        border-radius: 5px;
+    }
+    .card:after {
+        width: 300px;
+        height: 180px;
+        border-radius: 5px;
+    }
+    .fa-credit-card {
+        top: 10px;
+        left: 10px;
+    }
+    .fa-cc-mastercard {
+        bottom: 10px;
+        right: 10px;
+    }
+    .name {
+        top: 10px;
+        right: 10px;
+    }
+    .price {
+        bottom: 10px;
+        left: 10px;
+    }
+    .serial {
+        margin-top: -12px;
+        font-size: 21px;
+    }
+    .balance {
+        font-size: 10px;
+        margin-bottom: 2px;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,67 @@
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+}
+
+.tarjeta{
+    background-color:#05070a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.44);
+    width: 20vw;
+    height: 30vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 0.61);
+}
+
+.tarjeta:hover{
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.75);
+    border-color: rgba(0, 0, 255, 0.62);
+    width: 20vw;
+    height: 30vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.tarjeta2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(17, 23, 35);
+    width: 20vw;
+    height: 30vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(17, 23, 35);
+}
+
+.tarjeta2:hover{
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.75);
+    border-color: rgba(0, 0, 255, 0.62);
+    width: 20vw;
+    height: 30vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

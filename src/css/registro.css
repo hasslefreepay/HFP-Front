@@ -1,0 +1,166 @@
+.tt2 {
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    font-size: clamp(15px, 4vw, 30px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .tt3 {
+    padding: 0px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-size: clamp(10px, 3vw, 20px);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .p {
+    padding: 0px;
+    color: #afafaf;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .f2{
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    align-items: start;
+
+  }
+  
+  .f2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130vh;
+    background: #111827; /* Filtro oscuro con opacidad del 50% */
+    z-index: -1; /* Asegura que el filtro esté detrás del contenido */
+  }
+
+  .cuerpo{
+    height: 120vh;
+    width: 60vw;
+    padding-top: 3vh;
+
+  }
+
+  .se{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch; /* Esto asegura que los elementos hijos tengan la misma altura */
+
+
+  }
+
+  .lt2 {
+    grid-column: 1; /* Coloca el primer elemento en la primera columna */
+    width: 25vw;
+  }
+  
+  .rt2 {
+    grid-column: 2; /* Coloca el tercer elemento en la tercera columna */
+    width: 25vw;
+  }
+
+  .s{
+    border: none;
+    border-top: 2px solid #16141431;
+  }
+  
+  .input2{
+    color: #949494;
+    width: 25vw;
+    height: 4vh;
+    border-radius: 0.3rem;
+    color:rgba(240, 225, 225, 0.995);
+    background: rgba(255, 255, 255, 0.073);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.129);
+  }
+
+  .input3{
+    color: #949494;
+    width: 40vw;
+    height: 4vh;
+    border-radius: 0.3rem;
+    color:rgba(240, 225, 225, 0.995);
+    background: rgba(255, 255, 255, 0.073);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.129);
+  }
+
+  .input4{
+    color: #949494;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 0.3rem;
+    color:rgba(240, 225, 225, 0.995);
+    background: rgba(255, 255, 255, 0.073);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.129);
+  }
+
+  .se2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch; /* Esto asegura que los elementos hijos tengan la misma altura */
+    gap: 1vw;
+
+
+  }
+
+  .lt3 {
+    grid-column: 1; /* Coloca el primer elemento en la primera columna */
+    width: 15vw;
+  }
+  
+  .rt3 {
+    grid-column: 3; /* Coloca el tercer elemento en la tercera columna */
+    width: 15vw;
+  }
+
+  .ct3 {
+    grid-column: 2; /* Coloca el tercer elemento en la tercera columna */
+    width: 15vw;
+  }
+
+  .ln{
+    text-decoration: none;
+    color: rgb(42, 42, 147);
+  }
+
+  .che{
+    color: #949494;
+    border-radius: 0.3rem;
+    color:rgba(240, 225, 225, 0.995);
+    background: rgba(255, 255, 255, 0.073);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.129);
+  }
+  
+  .boton{
+    color: #2623db;
+    border-radius: 0.3rem;
+    width: clamp(60px, 40vw, 400px);
+    height: 4vh;
+    color:rgba(240, 225, 225, 0.995);
+    background: #2623db;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.129);
+  }
+  
